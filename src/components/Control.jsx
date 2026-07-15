@@ -1,10 +1,12 @@
-function Control () {
-    return (
-        <div className="control">
+function Controls(){
+    return(
+        <div className="controls">
             <button>Start</button>
-            <button>Pause</button>
-            <button>Reset</button>
+            <button>left👈</button>
+            <button>shoot🔫</button>
+            <button>right👉</button>
+
         </div>
     );
 }
-export default Control;
+export default Controls;
