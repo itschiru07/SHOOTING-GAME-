@@ -5,3 +5,4 @@ function Scoreboard({ score }) {
         </div>
     );
 }
+export default Scoreboard;
