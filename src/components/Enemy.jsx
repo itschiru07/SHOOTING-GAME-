@@ -1,6 +1,6 @@
-function Enemy() {
-    return ( 
-        <div className="enemy">
+function Enemy(){
+    return(
+        <div className="enemy-row">
             <span>🦠</span>
             <span>🦠</span>
             <span>🦠</span>

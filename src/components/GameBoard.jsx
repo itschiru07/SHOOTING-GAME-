@@ -1,11 +1,14 @@
 import Spaceship from "./Spaceship";
 import Enemy from "./Enemy";
 
-function GameBoard() {
-    return (
+function GameBoard(){
+    return(
         <div className="game-board">
-            <Spaceship />
             <Enemy />
+            <Spaceship 
+            shipPosition = {shipPosition}
+            />
+            
         </div>
     );
 }

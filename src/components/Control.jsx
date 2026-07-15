@@ -1,11 +1,10 @@
-function Controls(){
+function Controls({ moveLeft, shoot, moveRight, onStart }){
     return(
         <div className="controls">
-            <button>Start</button>
-            <button>left👈</button>
-            <button>shoot🔫</button>
-            <button>right👉</button>
-
+            <button onClick={onStart}>Start</button>
+            <button onClick={moveLeft}>Left</button>
+            <button onClick={shoot}>Shoot</button>
+            <button onClick={moveRight}>Right</button>
         </div>
     );
 }
