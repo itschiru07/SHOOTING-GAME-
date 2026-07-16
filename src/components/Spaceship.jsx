@@ -1,16 +1,22 @@
 function Spaceship({ shipPosition = 1 }) {
-  // Example positions (you can adjust these)
-  const positions = ["15%", "50%", "68%"];
-
-  // Pick the position based on the shipPosition prop
+  const positions = ["15%", "50%", "85%"];
   const currentLeft = positions[shipPosition];
 
   return (
     <div
-      className="spaceship"
-      style={{ position: "absolute", left: currentLeft, bottom: "20px" }}
+      className="spaceship-container"
+      style={{
+        position: "absolute",
+        left: currentLeft,
+        bottom: "20px",
+        transform: "translateX(-50%)",
+        transition: "left 0.18s cubic-bezier(0.25, 0.8, 0.25, 1)",
+      }}
     >
-      🚀
+      <div className="spaceship-sprite">
+        🚀
+        <div className="spaceship-thruster"></div>
+      </div>
     </div>
   );
 }
